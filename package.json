@@ -1,0 +1,21 @@
+{
+  "name": "omniplay-e2e",
+  "version": "1.0.0",
+  "description": "Production-grade, domain-agnostic Playwright + TypeScript E2E automation framework — wired to OpenMRS O3 demo out of the box.",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:api": "playwright test tests/api",
+    "test:e2e": "playwright test tests/e2e",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.7.0"
+  }
+}
